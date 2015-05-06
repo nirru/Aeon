@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EMMAJAMES</string>
+    
+    <!-- 启动加载品牌选择页面 -->
+    <string name="brand_choose_title">イオンブランドショップアプリ</string>
+    <string name="brand_choose_des">アプリ限定クーポンや\n最新情報をいち早くお届け。 </string>
+    <string name="brand_choose_subdes">ご覧になりたいブランドを選択してください。</string>
+    
+    <string name="brand_1">ESPRITMUR</string>
+    <string name="brand_2">bo.dre</string>
+    <string name="brand_3">emmajames</string>
+    
+    <!-- 首页菜单文本和页面标题 -->
+    <string name="my_shop_login">MYページ</string>
+    <string name="online_cart">オンラインショップ</string>
+    <string name="sale_off">クーポン</string>
+    <string name="shop_news">NEWS</string>
+    <string name="special_goods_show">特集一覧</string>
+    <string name="new_goods">新着商品</string>
+    <string name="web_view">Webサイト</string>
+    <string name="shop_view">店舗一覧</string>
+    <string name="wallpaper_setting">壁紙設定</string>
+    
+    <string name="myshop_login">マイ店舗登録</string>
+    
+    <!-- 点击登录菜单弹出的通知页面 -->
+    <string name="myShopNotice">MY店舗からのお知らせ</string>
+    <string name="have_no_notice">暫時のお知らせ！</string>
+    <string name="btn_confirm">ポイント確認</string>
+    <string name="btn_myshop_login">MY店舗登録</string>
+    
+    <!-- 点击通知页面的登录按钮弹出的登录页面 -->
+    <string name="form_introduce">下記の店舗一覧より３店舗まで選択し、決定ボタンを押してください。</string>
+    <string name="btn_decide">決定</string>
+    <string name="area_1">北海道</string>
+    <string name="area_2">東北</string>
+    <string name="area_3">関東</string>
+    <string name="area_4">中部</string>
+    <string name="area_5">近畿</string>
+    <string name="area_6">中国</string>
+    <string name="area_7">四国</string>
+    <string name="area_8">九州</string>
+    
+    <string name="top">TOP</string>
+    <string name="max_allow_message">選択できる店舗は３店舗です。</string>
+    <string name="dialog_title">選択できる店舗は３店舗です。</string>
+    <string name="dialog_content">すでに登録されているお気入り店舗を再度選択いただき、お気に入りを解除してください。</string>
+    <string name="dialog_btn">OK</string>
+    
+    <!-- 优惠券页面 -->
+    <string name="loading_message">読み取り中……</string>
+    
+    <!-- 新着商品页面 -->
+    <string name="new_info">新着情報</string>
+    
+    <!-- 壁纸设定页面 -->
+    <string name="setting_intro">アプリのTOP画面を\nお好きな画像に変更できます。</string>
+    
+    <!-- 提示信息 -->
+    <string name="network_not_connected">网络未连接</string>
+    <string name="wallpaper_set_successfully">壁紙の設定が成功しました。</string>
+    <string name="img_download_failed">失败写真下載</string>
+    <string name="protocol_error">協議やネットミスミス！</string>
+    <string name="load_data_failed">数据加载失败！</string>
+    <string name="no_coupon">暂无优惠券！</string>
+    
+    
+    <string name="push_message1">MY店舗からのお知らせが更新されました</string>
+    <string name="push_message2">クーポンが更新されました</string>
+    <string name="push_message3">特集が更新されました</string>
+    <string name="push_message4">新着商品が更新されました</string>
+    
+</resources>

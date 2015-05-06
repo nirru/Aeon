@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info.aeon.app.EMMAJAMESApp.view.AnimationTabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/footer_menu_btns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/brand1_footer_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+			
+            <info.aeon.app.EMMAJAMESApp.view.TouchDarkerButton
+                android:id="@+id/tab_preview"
+                style="@style/home_tab_button"
+                android:background="@drawable/tab_btn_preview" />
+            
+            <info.aeon.app.EMMAJAMESApp.view.TouchDarkerButton
+                android:id="@+id/tab_choose_brand"
+                style="@style/home_tab_button"
+                android:background="@drawable/tab_btn_brandchoose"/>
+ 
+            <info.aeon.app.EMMAJAMESApp.view.TouchDarkerButton
+                android:id="@+id/tab_home"
+                style="@style/home_tab_button"
+                android:background="@drawable/tab_btn_home" />
+
+            <info.aeon.app.EMMAJAMESApp.view.TouchDarkerButton
+                android:id="@+id/tab_refresh"
+                style="@style/home_tab_button"
+                android:background="@drawable/tab_btn_refresh"/>
+
+            <info.aeon.app.EMMAJAMESApp.view.TouchDarkerButton
+                android:id="@+id/tab_backview"
+                style="@style/home_tab_button"
+                android:background="@drawable/tab_btn_backview" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</info.aeon.app.EMMAJAMESApp.view.AnimationTabHost>

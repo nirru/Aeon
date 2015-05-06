@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/shop_notice_title"
+        style="@style/label_text_style"
+        android:layout_marginBottom="5dp"
+        android:text="@string/myShopNotice" />
+
+    <ListView
+        android:id="@+id/shop_notice_list"
+        style="@style/listview_style"
+        android:layout_height="200dip"
+        android:background="@drawable/d_gray_border" />
+
+    <LinearLayout
+        android:id="@+id/login_btn"
+        style="@style/notice_btn_bg_style"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            style="@style/notice_btn_text_style"
+            android:text="@string/btn_myshop_login" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comfirm_btn"
+        style="@style/notice_btn_bg_style"
+        android:layout_marginTop="30dip"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/notice_btn_text_style"
+            android:text="@string/btn_confirm" />
+    </LinearLayout>
+
+</LinearLayout>

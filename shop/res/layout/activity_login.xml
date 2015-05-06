@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="@null" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <TextView
+                android:id="@+id/sub_title"
+                style="@style/label_text_style"
+                android:text="@string/form_introduce" />
+
+                <LinearLayout
+                    android:id="@+id/decide_btn"
+                    style="@style/notice_btn_bg_style"
+                    android:layout_marginTop="10dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/notice_btn_text_style"
+                        android:text="@string/btn_decide" />
+                </LinearLayout>
+
+                <info.aeon.app.EMMAJAMESApp.view.MyGridView
+                    android:id="@+id/area_gridmenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:drawSelectorOnTop="true"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="@drawable/s_predark"
+                    android:longClickable="false"
+                    android:numColumns="2"
+                    android:scrollbars="none"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="10dp" />
+
+                <info.aeon.app.EMMAJAMESApp.view.MyExpandList
+                    android:id="@+id/area_shops_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:childDivider="@null"
+                    android:clickable="true"
+                    android:divider="@null"
+                    android:fadingEdge="none"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:groupIndicator="@null"
+                    android:listSelector="@android:color/transparent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:paddingBottom="20dip" >
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/top_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingBottom="30dip"
+        android:paddingRight="15dip" >
+
+        <TextView
+            android:id="@+id/text_top"
+            style="@style/content_text_style"
+            android:layout_alignParentRight="true"
+            android:text="@string/top" />
+
+        <ImageView
+            android:id="@+id/top_icon"
+            android:layout_width="18dip"
+            android:layout_height="18dip"
+            android:layout_toLeftOf="@+id/text_top"
+            android:scaleType="fitEnd"
+            android:src="@drawable/top_icon" />
+    </RelativeLayout>
+
+</FrameLayout>

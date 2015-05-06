@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#FFFAFA</color>
+    <color name="pink">#fb5b7f</color>
+    <color name="black">#000000</color>
+    <color name="head">#ffb10000</color>
+    <color name="lightgray">#dddddd</color>  
+    <color name="trans">#55000000</color>
+    <color name="tran_light_color">#6effffff</color>
+    <color name="tran_dark_color">#6e000000</color>
+    <color name="btn_black_bg">#000000</color>
+    
+    <color name="brand_title_bg">#DCDDDD</color>
+    <color name="brand_subdes_bg">#727272</color>
+    
+    <color name="brand1_footer_bg">#20231E</color>
+    <color name="brand2_footer_bg">#EDA8AB</color>
+    <color name="brand3_footer_bg">#BBA17A</color>
+    
+    <color name="news_item_bg_1">#DCDDDD</color>
+    <color name="news_item_bg_2">#EFEFEF</color>
+    
+    <color name="dark_btn_normal">#221815</color>
+    <color name="dark_btn_press">#333333</color>
+    
+    <color name="img_unload_border">#DCDDDD</color>
+    
+    <color name="black_text_color">#221815</color>
+    <color name="home_gridmenu_text_color">#221815</color>
+    
+    <color name="page_title_bg_color">#DCDDDD</color>
+    <color name="page_title_text_color">#221815</color>
+    
+    <color name="notice_btn_text_color">#ffffff</color>
+    
+    <color name="login_diglog_delims">#DCDDDD</color>
+    <color name="btn_text_color">#367ABF</color>
+    
+    <color name="orange">#EE992A</color>
+    <color name="gray_dark">#999999</color>
+    
+</resources>

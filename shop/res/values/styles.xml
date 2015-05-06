@@ -1,0 +1,156 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+	<!-- 加载页面显示的三个选择品牌的按钮样式 -->
+	<style name="brand_choose_btn_style">
+	    <item name="android:background">@drawable/s_choose_brand_btn_click</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dip</item>
+    </style>
+    
+    <!-- 底部五个按钮的属性 -->
+    <style name="home_tab_button">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dip</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_marginLeft">17dip</item>
+        <item name="android:layout_marginRight">17dip</item>
+        <item name="android:layout_marginTop">10dip</item>
+        <item name="android:layout_marginBottom">10dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    
+    <!-- 首页中下面8个菜单的图标样式 -->
+    <style name="home_gridmenu_icon_style">
+    	<item name="android:layout_width">30dip</item>
+        <item name="android:layout_height">30dip</item>
+        <item name="android:scaleType">fitEnd</item>
+        <item name="android:focusable">false</item>
+    </style>
+    
+    <!-- 首页中下面8个菜单的文本样式 -->
+    <style name="home_gridmenu_text_style">
+    	<item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/home_gridmenu_text_color</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <!-- 有的页面顶部会有一个灰色背景的标题，这是标题栏的背景样式 -->
+    <style name="page_title_bg_style">
+    	<item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@color/page_title_bg_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <!-- 有的页面顶部会有一个灰色背景的标题，这是标题栏的标题文本样式 -->
+    <style name="page_title_text_style">
+    	<item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/page_title_text_color</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <!-- 点击登录弹出的通知页面中的两个黑色背景的按钮背景样式-->
+    <style name="notice_btn_bg_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/s_black_btn_click</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dip</item>
+    </style>
+    
+    <!-- 点击登录弹出的通知页面中的两个黑色背景的按钮文字样式-->
+    <style name="notice_btn_text_style">
+    	<item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/notice_btn_text_color</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <!-- 登录页面位置选择块的样式 -->
+    <style name="shop_area_selector_style">
+    	<item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/d_light_1black_0_3</item>
+        <item name="android:textColor">@color/black_text_color</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    
+    <!-- 所有页面小标题样式 -->
+    <style name="label_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_text_color</item>
+    </style>
+    
+    <!-- 所有页面中文本的样式 -->
+    <style name="content_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black_text_color</item>
+    </style>
+    
+    <!-- 所有页面列表控件的公共属性，比如通知列表，新闻列表，特辑列表，壁纸列表 -->
+    <style name="listview_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">220dip</item>
+        <item name="android:dividerHeight">3dip</item>
+        <item name="android:scrollbars">@null</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:divider">@null</item>
+        <item name="android:listSelector">@drawable/s_gridmenu_selected</item>
+    </style>
+    
+    <style name="index_tab_top">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:textSize">14sp</item>      
+    </style>
+    
+    <style name="news_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black_text_color</item>
+    </style>
+    
+</resources>

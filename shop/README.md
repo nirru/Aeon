@@ -1,0 +1,2 @@
+master branch placed aeon project without message push module,and message push module coded by another.so, I push the code whit push module to addPush branch ,for message push code is untidy! if you want to modify mainframe of this app,clone master branch is enough.
+if you intent to test or program message push module,you have to clone addPush branch instead.

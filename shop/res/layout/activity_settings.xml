@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/setting_intro"
+        style="@style/label_text_style"
+        android:layout_marginBottom="5dp"
+        android:text="@string/setting_intro" />
+
+            <ListView
+                android:id="@+id/wallpaper_listview"
+                style="@style/listview_style" 
+                android:listSelector="@null"/>
+
+</LinearLayout>

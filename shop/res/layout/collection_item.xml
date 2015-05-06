@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="25dip"
+    android:orientation="vertical" >
+	<TextView
+        android:id="@+id/collection_name"
+        style="@style/content_text_style" />
+    <ImageView
+        android:id="@+id/collection_album"
+        android:layout_width="match_parent"
+        android:background="@drawable/d_gray_border"
+        android:layout_height="wrap_content"
+        android:minHeight="125dip"
+        android:adjustViewBounds="true"
+        android:longClickable="false"
+        android:focusable="false"/>
+</LinearLayout>

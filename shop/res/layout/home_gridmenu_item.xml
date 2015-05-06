@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/home_gridmenu_icon"
+            style="@style/home_gridmenu_icon_style"
+            android:layout_marginBottom="5dip" />
+
+        <TextView
+            android:id="@+id/home_gridmenu_text"
+            style="@style/home_gridmenu_text_style" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/home_gridmenu_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

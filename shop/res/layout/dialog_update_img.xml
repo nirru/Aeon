@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/update_img_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/update_img_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update_img_img"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/update_img_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/update_img_tv"
+        android:layout_centerHorizontal="true"
+        android:background="@color/gray"
+        android:minWidth="300dip" />
+
+    <LinearLayout
+        android:id="@+id/update_img_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update_img_line"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/update_img_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@color/orange"
+            android:gravity="center"
+            android:minHeight="40dip"
+            android:minWidth="150dip"
+            android:text="更新"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/update_img_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_marginLeft="20dip"
+            android:background="@color/gray_dark"
+            android:gravity="center"
+            android:minHeight="40dip"
+            android:minWidth="150dip"
+            android:text="キャンセル"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

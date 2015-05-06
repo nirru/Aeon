@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.aeon.app.EMMAJAMESApp"
+    android:versionCode="3"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="21" />
+
+<!--     <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <compatible-screens>
+
+        all small size screens
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="small" />
+        all normal size screens
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="hdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="normal" />
+    </compatible-screens> -->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
+
+    <permission
+        android:name="info.aeon.app.EMMAJAMESApp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="info.aeon.app.EMMAJAMESApp.ui.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="info.aeon.app.EMMAJAMESApp.frame.FrameActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="info.aeon.app.EMMAJAMESApp.ui.BrandActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="info.aeon.app.EMMAJAMESApp.ui.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="info.aeon.app.EMMAJAMESApp.ui.WebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="info.aeon.app.EMMAJAMESApp.ui.NoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="info.aeon.app.EMMAJAMESApp.ui.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="info.aeon.app.EMMAJAMESApp.ui.CouponActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="info.aeon.app.EMMAJAMESApp.ui.NewgoodsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="info.aeon.app.EMMAJAMESApp.ui.CollectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="info.aeon.app.EMMAJAMESApp.ui.SettingsActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="info.aeon.app.EMMAJAMESApp.push.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="info.aeon.app.EMMAJAMESApp" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="info.aeon.app.EMMAJAMESApp.push.GcmIntentService" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
